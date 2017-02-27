@@ -1,0 +1,35 @@
+{
+  "capital": [
+    "What is the capital of #COUNTRY#?",
+    "The capital of #COUNTRY# is #ANSWER#."
+  ],
+  "population": [
+    "What is the population of #COUNTRY#?",
+    "The population of #COUNTRY# is #ANSWER#."
+  ],
+  "languages": [
+    "What are the languages in #COUNTRY#?",
+    "The languages of #COUNTRY# are #ANSWER#."
+  ],
+  "region": [
+    "What continental region is #COUNTRY# a part of?",
+    "#COUNTRY# is in the region #ANSWER#."
+  ],
+  "border": [
+    "What countries border #COUNTRY#?",
+    "#COUNTRY# is bordered by #ANSWER#."
+  ],
+  "latlng": [
+    "What are the latitude and longitude coordinates of #COUNTRY#?",
+    "The latitude and longitude coordinates of #COUNTRY# are #ANSWER#."
+  ],
+  "currencies": [
+    "What are the currencies of #COUNTRY#?",
+    "The currencies of #COUNTRY# are #ANSWER#."
+  ],
+
+  "larger_population": [
+    "Which country has the bigger population, #COUNTRY1# or #COUNTRY2#?",
+    "#ANSWER# has the bigger population."
+  ]
+}

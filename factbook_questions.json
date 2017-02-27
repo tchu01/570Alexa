@@ -1,0 +1,59 @@
+{
+  "area": [
+    "What is the total area of #COUNTRY#?",
+    "The total area of #COUNTRY# is #ANSWER#."
+  ],
+  "land": [
+    "What is the land area of #COUNTRY#?",
+    "The land area of #COUNTRY# is #ANSWER#."
+  ],
+  "water": [
+    "What is the water area of #COUNTRY#?",
+    "The water area of #COUNTRY# is #ANSWER#."
+  ],
+  "climate": [
+    "What is the climate of #COUNTRY#?",
+    "The climate of #COUNTRY# is #ANSWER#."
+  ],
+  "median_age_male": [
+    "What is the median age of males in #COUNTRY#?",
+    "The medium age of males in #COUNTRY# is #ANSWER#."
+  ],
+  "median_age_female": [
+    "What is the median age of females in #COUNTRY#?",
+    "The medium age of females in #COUNTRY# is #ANSWER#."
+  ],
+  "life_expectancy_male": [
+    "What is the life expectancy of males in #COUNTRY#?",
+    "The life expectancy of males in #COUNTRY# is #ANSWER#."
+  ],
+  "life_expectancy_female": [
+    "What is the life expectancy of females in #COUNTRY#?",
+    "The life expectancy of females in #COUNTRY# is #ANSWER#."
+  ],
+  "literacy": [
+    "What is the literacy rate in #COUNTRY#?",
+    "The literacy rate in #COUNTRY# is #ANSWER#"
+  ],
+  "literacy_male": [
+    "What is the literacy rate of males in #COUNTRY#?",
+    "The male literacy rate in #COUNTRY# is #ANSWER#"
+  ],
+  "literacy_female": [
+    "What is the literacy rate of females in #COUNTRY#?",
+    "The female literacy rate in #COUNTRY# is #ANSWER#."
+  ],
+  "unemployment": [
+    "What is the unemployment rate in #COUNTRY#?",
+    "The unemployment rate in #COUNTRY# is #ANSWER#."
+  ],
+  "poverty_line": [
+    "What percent of the population in #COUNTRY# is below the poverty line?",
+    "#ANSWER# of the population in #COUNTRY# is below the poverty line."
+  ],
+
+  "larger_land": [
+    "Which country is bigger, #COUNTRY1# or #COUNTRY2#?",
+    "#ANSWER# is bigger."
+  ]
+}
