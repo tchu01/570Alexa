@@ -53,7 +53,7 @@
   ],
 
   "larger_land": [
-    "Which country is bigger, #COUNTRY1# or #COUNTRY2#?",
+    "Which country is bigger, #COUNTRY# or #COUNTRY2#?",
     "#ANSWER# is bigger."
   ]
 }
