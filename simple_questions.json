@@ -15,7 +15,6 @@
     "What are the latitude and longitude coordinates of #COUNTRY#?",
     "The latitude and longitude coordinates of #COUNTRY# are #ANSWER#."
   ],
-
   "borders": [
     "What countries border #COUNTRY#?",
     "#COUNTRY# is bordered by #ANSWER#."
@@ -24,11 +23,6 @@
     "What are the languages in #COUNTRY#?",
     "The languages of #COUNTRY# are #ANSWER#."
   ],
-  "currencies": [
-    "What are the currencies of #COUNTRY#?",
-    "The currencies of #COUNTRY# are #ANSWER#."
-  ],
-
   "larger_population": [
     "Which country has the bigger population, #COUNTRY# or #COUNTRY2#?",
     "#ANSWER# has the bigger population."
