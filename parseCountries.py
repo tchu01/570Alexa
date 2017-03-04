@@ -3,7 +3,7 @@ import requests
 import random
 
 
-def main():
+def gen(howMany):
     cl = getCountriesList()
     nl = getNewsList()
     relevant = []
@@ -21,7 +21,11 @@ def main():
             # print("\n")
             pass
 
-    question, answer = generate_qa(relevant)
+    question_answer_list = []
+    for i in range(howMany):
+        question_answer_list.append(generate_qa(relevant))
+
+    return question_answer_list
 
 
 def getNewsList():
@@ -130,4 +134,4 @@ def generate_qa(relevant):
 
 
 if __name__ == "__main__":
-    main()
+    gen()

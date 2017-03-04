@@ -3,6 +3,7 @@ from random import randint
 from flask import Flask, render_template
 from flask_ask import Ask, statement, question, session
 import flask_ask
+from parseCountries import gen
 
 app = Flask(__name__)
 ask = Ask(app, "/")
@@ -52,9 +53,18 @@ def answer(saidNum):
 #howMany = Int 
 #returns list of questions
 def generateQuestions(howMany):
-    questionList = []
-    questionList.append(TriviaQuestion("What is the best hockey team?",["","Calgary Flames","San Jose Sharks"],1))
-    return questionList
+    question_answer_list = gen(howMany)
+    question_list = []
+    for q,a in question_answer_list:
+        # currently, only the correct answers are returned by the gen function. I can fix this, but waiting for Foaad's
+        # response to see what he wants
+        question_list.append(TriviaQuestion(q, ["", a]))
+
+    return question_list
+
+    # questionList = []
+    # questionList.append(TriviaQuestion("What is the best hockey team?",["","Calgary Flames","San Jose Sharks"],1))
+    # return questionList
 
 class TriviaQuestion:
     def __init__(self, questionText, answers, correct):
