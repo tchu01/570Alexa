@@ -130,7 +130,8 @@ def generate_qa(relevant):
 
             print(question)
             print(answer)
-            return question, answer
+            print(str(country_answers[choice]))
+            return question, answer, str(country_answers[choice])
 
 
 if __name__ == "__main__":
