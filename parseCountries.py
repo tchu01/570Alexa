@@ -95,6 +95,7 @@ def generate_qa(relevant):
 
             if '#COUNTRY2#' not in question:
                 answer = answer.replace('#ANSWER#', str(country_answers[choice]))
+                singular_answer = str(country_answers[choice])
             else:
                 country2 = country
                 country2_a2c = country_a2c
@@ -123,15 +124,17 @@ def generate_qa(relevant):
 
                     if val > val2:
                         final = country
+                        singular_answer = country
                     else:
                         final = country2
+                        singular_answer = country
 
                     answer = answer.replace("#ANSWER#", final)
 
             print(question)
             print(answer)
-            print(str(country_answers[choice]))
-            return question, answer, str(country_answers[choice])
+            print(singular_answer)
+            return question, answer, singular_answer
 
 
 if __name__ == "__main__":

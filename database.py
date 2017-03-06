@@ -93,13 +93,13 @@ def run():
 
                     if 'Economy' in json_data and 'Unemployment rate' in json_data['Economy']:
                         unemployment = json_data['Economy']['Unemployment rate']['text']
-                        percent = re.match("(\d*)\%", unemployment)
+                        percent = re.match("(\d*)\%", unemployment).group()
                         if percent is not None:
                             data['unemployment'] = str(percent)
 
                     if 'Economy' in json_data and 'Population below poverty line' in json_data['Economy']:
                         poverty_line = json_data['Economy']['Population below poverty line']['text']
-                        percent = re.match("(\d*)\%", poverty_line)
+                        percent = re.match("(\d*)\%", poverty_line).group()
                         if percent is not None:
                             data['poverty_line'] = str(percent)
             else:
