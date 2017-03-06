@@ -3,11 +3,11 @@ from random import randint
 from flask import Flask, render_template
 from flask_ask import Ask, statement, question, session
 import flask_ask
-from parseCountries import gen
+from parseCountries import *
 
 app = Flask(__name__)
 ask = Ask(app, "/")
-logging.getLogger("flask_ask").setLevel(logging.DEBUG) 
+logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 
 currentQuestion = None
@@ -21,8 +21,8 @@ def new_game():
 def next_round():
     global currentQuestion
     question = generateQuestions(1)[0]
-    currentQuestion = question 
-    print question.toEnglish() 
+    currentQuestion = question
+    print question.toEnglish()
     return flask_ask.question(question.toEnglish())
     #numbers = [randint(0, 9) for _ in range(3)]
     #round_msg = render_template('round', numbers=numbers)
@@ -35,10 +35,13 @@ def stop():
     return statement(msg)
 
 #detect invalid answer and Out of index number
-@ask.intent("AnswerIntent", convert={'saidNum': int})
-def answer(saidNum):
+@ask.intent("AnswerIntent", convert={'reply': str})
+def answer(reply):
     global currentQuestion
-    if saidNum == currentQuestion.correct:
+
+    print "HERE"
+    print reply
+    if reply == currentQuestion.correct:
         msg = "Good job!"
     else:
         msg = "Sorry.  The answer is " + str(currentQuestion.answers[currentQuestion.correct])
@@ -48,29 +51,23 @@ def answer(saidNum):
     #    msg = "Good job!"
     #else:
     #    msg = "Sorry, that's the wrong answer."
-    return statement(msg) 
+    return statement(msg)
 
-#howMany = Int 
+#howMany = Int
 #returns list of questions
 def generateQuestions(howMany):
-    question_answer_list = gen(howMany)
-    question_list = []
-    for q,a in question_answer_list:
-        # currently, only the correct answers are returned by the gen function. I can fix this, but waiting for Foaad's
-        # response to see what he wants
-        question_list.append(TriviaQuestion(q, ["", a]))
+    questionList = []
+    tempQ = gen(1)
+    tq = TriviaQuestion(tempQ[0], tempQ[1], tempQ[2])
+    questionList.append(tq)
+    return questionList
 
-    return question_list
 
-    # questionList = []
-    # questionList.append(TriviaQuestion("What is the best hockey team?",["","Calgary Flames","San Jose Sharks"],1))
-    # return questionList
 
 class TriviaQuestion:
     def __init__(self, questionText, answers, correct):
-        self.questionText = questionText 
-        self.answers = answers
-        self.correct = correct #int referring to the correct answer in the answer list 
+        self.questionText = questionText
+        self.answer = correct
 
     def toEnglish(self):
         toReturn = self.questionText
@@ -79,6 +76,10 @@ class TriviaQuestion:
                 toReturn += " " + str(a) + ". " + self.answers[a] + ". "
         return toReturn
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+
