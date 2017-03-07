@@ -4,7 +4,7 @@
     "The capital of #COUNTRY# is #ANSWER#."
   ],
   "population": [
-    "What is the population of #COUNTRY#, rounded to the nearest ten thousand?",
+    "What is the population of #COUNTRY#, rounded to the nearest million?",
     "The population of #COUNTRY# is #ANSWER#."
   ],
   "region": [
@@ -24,15 +24,15 @@
     "The languages of #COUNTRY# are #ANSWER#."
   ],
   "area": [
-    "What is the total area of #COUNTRY#, in kilometers squared?",
+    "What is the total area of #COUNTRY#, in kilometers squared and rounded to the nearest thousand?",
     "The total area of #COUNTRY# is #ANSWER#."
   ],
   "land": [
-    "What is the land area of #COUNTRY#, in kilometers squared?",
+    "What is the land area of #COUNTRY#, in kilometers squared and rounded to the nearest thousand?",
     "The land area of #COUNTRY# is #ANSWER#."
   ],
   "water": [
-    "What is the water area of #COUNTRY#, in kilometers squared?",
+    "What is the water area of #COUNTRY#, in kilometers squared and rounded to the nearest thousand?",
     "The water area of #COUNTRY# is #ANSWER#."
   ],
   "climate": [
