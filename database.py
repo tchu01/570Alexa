@@ -9,7 +9,7 @@ def run():
     print(len(cl))
     a3c_to_country = a3c_to_country_dict(cl)
 
-    for country, country_a2c, country_a3c in cl:
+    for country, country_a2c, country_a3c in sorted(cl):
         data = {}
 
         file = 'data/' + str(country_a2c) + '.json'
@@ -23,7 +23,8 @@ def run():
             if 'capital' in json_data:
                 data['capital'] = json_data['capital']
             if 'population' in json_data:
-                data['population'] = json_data['population']
+                val = json_data['population']
+                data['population'] = round(val / 10000.0) * 10000.0
             if 'region' in json_data:
                 data['region'] = json_data['region']
             if 'area' in json_data:
@@ -64,7 +65,8 @@ def run():
 
                 data['languages'] = str_languages
 
-            factbook_file = '_data/' + str(country_a2c) + '.json'
+
+            factbook_file = os.path.abspath('_data/' + str(country_a2c).lower() + '.json')
             if os.path.isfile(factbook_file) == True:
                 with open(factbook_file, encoding='utf-8') as reader:
                     json_data = json.load(reader)
@@ -74,34 +76,52 @@ def run():
                             data['land'] = json_data['Geography']['Area']['land']['text']
                         if 'water' in json_data['Geography']['Area']:
                             data['water'] = json_data['Geography']['Area']['water']['text']
+                    else:
+                        print("No Geography/Area")
+
                     if 'Geography' in json_data and 'Climate' in json_data['Geography']:
                         if 'text' in json_data['Geography']['Climate']:
                             data['climate'] = json_data['Geography']['Climate']['text']
                         else:
                             keys = list(json_data['Geography']['Climate'].keys())
                             data['climate'] = json_data['Geography']['Climate'][keys[0]]['text']
+                    else:
+                        print("No Geography/Climate")
 
                     if 'People and Society' in json_data and 'Median age' in json_data['People and Society']:
                         data['median_age_male'] = json_data['People and Society']['Median age']['male']['text']
                         data['median_age_female'] = json_data['People and Society']['Median age']['female']['text']
+                    else:
+                        print("No People and Society/Median Age")
+
                     if 'People and Society' in json_data and 'Life expectancy at birth' in json_data['People and Society']:
                         data['life_expectancy_male'] = json_data['People and Society']['Life expectancy at birth']['male']['text']
                         data['life_expectancy_female'] = json_data['People and Society']['Life expectancy at birth']['female']['text']
+                    else:
+                        print("No People and Society/Life expectancy at birth")
+
                     if 'People and Society' in json_data and 'Literacy' in json_data['People and Society']:
                         data['literacy_male'] = json_data['People and Society']['Literacy']['male']['text']
                         data['literacy_female'] = json_data['People and Society']['Literacy']['male']['text']
+                    else:
+                        print("No People and Society/Literacy")
 
                     if 'Economy' in json_data and 'Unemployment rate' in json_data['Economy']:
                         unemployment = json_data['Economy']['Unemployment rate']['text']
-                        percent = re.match("(\d*)\%", unemployment).group()
+                        percent = re.match("(\d*|\d*.\d*)\%", unemployment).group(1)
                         if percent is not None:
-                            data['unemployment'] = str(percent)
+                            data['unemployment'] = str(percent) + '%'
+                    else:
+                        print("No Economy/Unemployment rate")
 
                     if 'Economy' in json_data and 'Population below poverty line' in json_data['Economy']:
                         poverty_line = json_data['Economy']['Population below poverty line']['text']
-                        percent = re.match("(\d*)\%", poverty_line).group()
+                        percent = re.match("(\d*|\d*.\d*)\%", poverty_line).group(1)
                         if percent is not None:
-                            data['poverty_line'] = str(percent)
+                            data['poverty_line'] = str(percent) + '%'
+                    else:
+                        print("No Economy/Population below poverty line")
+
             else:
                 print("Warning, no factbook json for...")
                 print(country)

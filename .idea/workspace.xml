@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="67d71c22-bafa-4ae6-92d8-d78adf37d16e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AD.json" afterPath="$PROJECT_DIR$/data/AD.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AE.json" afterPath="$PROJECT_DIR$/data/AE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AF.json" afterPath="$PROJECT_DIR$/data/AF.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AG.json" afterPath="$PROJECT_DIR$/data/AG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AI.json" afterPath="$PROJECT_DIR$/data/AI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AL.json" afterPath="$PROJECT_DIR$/data/AL.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AM.json" afterPath="$PROJECT_DIR$/data/AM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AO.json" afterPath="$PROJECT_DIR$/data/AO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AQ.json" afterPath="$PROJECT_DIR$/data/AQ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AR.json" afterPath="$PROJECT_DIR$/data/AR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AS.json" afterPath="$PROJECT_DIR$/data/AS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AT.json" afterPath="$PROJECT_DIR$/data/AT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AU.json" afterPath="$PROJECT_DIR$/data/AU.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AW.json" afterPath="$PROJECT_DIR$/data/AW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AX.json" afterPath="$PROJECT_DIR$/data/AX.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/AZ.json" afterPath="$PROJECT_DIR$/data/AZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BA.json" afterPath="$PROJECT_DIR$/data/BA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BB.json" afterPath="$PROJECT_DIR$/data/BB.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BD.json" afterPath="$PROJECT_DIR$/data/BD.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BE.json" afterPath="$PROJECT_DIR$/data/BE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BF.json" afterPath="$PROJECT_DIR$/data/BF.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BG.json" afterPath="$PROJECT_DIR$/data/BG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BH.json" afterPath="$PROJECT_DIR$/data/BH.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BI.json" afterPath="$PROJECT_DIR$/data/BI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BJ.json" afterPath="$PROJECT_DIR$/data/BJ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BL.json" afterPath="$PROJECT_DIR$/data/BL.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BM.json" afterPath="$PROJECT_DIR$/data/BM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BN.json" afterPath="$PROJECT_DIR$/data/BN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BO.json" afterPath="$PROJECT_DIR$/data/BO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BQ.json" afterPath="$PROJECT_DIR$/data/BQ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BR.json" afterPath="$PROJECT_DIR$/data/BR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BS.json" afterPath="$PROJECT_DIR$/data/BS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BT.json" afterPath="$PROJECT_DIR$/data/BT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BV.json" afterPath="$PROJECT_DIR$/data/BV.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BW.json" afterPath="$PROJECT_DIR$/data/BW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BY.json" afterPath="$PROJECT_DIR$/data/BY.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/BZ.json" afterPath="$PROJECT_DIR$/data/BZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CA.json" afterPath="$PROJECT_DIR$/data/CA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CC.json" afterPath="$PROJECT_DIR$/data/CC.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CD.json" afterPath="$PROJECT_DIR$/data/CD.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CF.json" afterPath="$PROJECT_DIR$/data/CF.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CG.json" afterPath="$PROJECT_DIR$/data/CG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CH.json" afterPath="$PROJECT_DIR$/data/CH.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CI.json" afterPath="$PROJECT_DIR$/data/CI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CK.json" afterPath="$PROJECT_DIR$/data/CK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CL.json" afterPath="$PROJECT_DIR$/data/CL.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CM.json" afterPath="$PROJECT_DIR$/data/CM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CN.json" afterPath="$PROJECT_DIR$/data/CN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CO.json" afterPath="$PROJECT_DIR$/data/CO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CR.json" afterPath="$PROJECT_DIR$/data/CR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CU.json" afterPath="$PROJECT_DIR$/data/CU.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CV.json" afterPath="$PROJECT_DIR$/data/CV.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CW.json" afterPath="$PROJECT_DIR$/data/CW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CX.json" afterPath="$PROJECT_DIR$/data/CX.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CY.json" afterPath="$PROJECT_DIR$/data/CY.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/CZ.json" afterPath="$PROJECT_DIR$/data/CZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/DE.json" afterPath="$PROJECT_DIR$/data/DE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/DJ.json" afterPath="$PROJECT_DIR$/data/DJ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/DK.json" afterPath="$PROJECT_DIR$/data/DK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/DM.json" afterPath="$PROJECT_DIR$/data/DM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/DO.json" afterPath="$PROJECT_DIR$/data/DO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/DZ.json" afterPath="$PROJECT_DIR$/data/DZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/EC.json" afterPath="$PROJECT_DIR$/data/EC.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/EE.json" afterPath="$PROJECT_DIR$/data/EE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/EG.json" afterPath="$PROJECT_DIR$/data/EG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/EH.json" afterPath="$PROJECT_DIR$/data/EH.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ER.json" afterPath="$PROJECT_DIR$/data/ER.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ES.json" afterPath="$PROJECT_DIR$/data/ES.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ET.json" afterPath="$PROJECT_DIR$/data/ET.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/FI.json" afterPath="$PROJECT_DIR$/data/FI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/FJ.json" afterPath="$PROJECT_DIR$/data/FJ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/FK.json" afterPath="$PROJECT_DIR$/data/FK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/FM.json" afterPath="$PROJECT_DIR$/data/FM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/FO.json" afterPath="$PROJECT_DIR$/data/FO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/FR.json" afterPath="$PROJECT_DIR$/data/FR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GA.json" afterPath="$PROJECT_DIR$/data/GA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GB.json" afterPath="$PROJECT_DIR$/data/GB.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GD.json" afterPath="$PROJECT_DIR$/data/GD.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GE.json" afterPath="$PROJECT_DIR$/data/GE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GF.json" afterPath="$PROJECT_DIR$/data/GF.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GG.json" afterPath="$PROJECT_DIR$/data/GG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GH.json" afterPath="$PROJECT_DIR$/data/GH.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GI.json" afterPath="$PROJECT_DIR$/data/GI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GL.json" afterPath="$PROJECT_DIR$/data/GL.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GM.json" afterPath="$PROJECT_DIR$/data/GM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GN.json" afterPath="$PROJECT_DIR$/data/GN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GP.json" afterPath="$PROJECT_DIR$/data/GP.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GQ.json" afterPath="$PROJECT_DIR$/data/GQ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GR.json" afterPath="$PROJECT_DIR$/data/GR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GS.json" afterPath="$PROJECT_DIR$/data/GS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GT.json" afterPath="$PROJECT_DIR$/data/GT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GU.json" afterPath="$PROJECT_DIR$/data/GU.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GW.json" afterPath="$PROJECT_DIR$/data/GW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/GY.json" afterPath="$PROJECT_DIR$/data/GY.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/HK.json" afterPath="$PROJECT_DIR$/data/HK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/HM.json" afterPath="$PROJECT_DIR$/data/HM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/HN.json" afterPath="$PROJECT_DIR$/data/HN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/HR.json" afterPath="$PROJECT_DIR$/data/HR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/HT.json" afterPath="$PROJECT_DIR$/data/HT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/HU.json" afterPath="$PROJECT_DIR$/data/HU.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ID.json" afterPath="$PROJECT_DIR$/data/ID.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/IE.json" afterPath="$PROJECT_DIR$/data/IE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/IL.json" afterPath="$PROJECT_DIR$/data/IL.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/IM.json" afterPath="$PROJECT_DIR$/data/IM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/IN.json" afterPath="$PROJECT_DIR$/data/IN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/IO.json" afterPath="$PROJECT_DIR$/data/IO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/IQ.json" afterPath="$PROJECT_DIR$/data/IQ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/IR.json" afterPath="$PROJECT_DIR$/data/IR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/IS.json" afterPath="$PROJECT_DIR$/data/IS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/IT.json" afterPath="$PROJECT_DIR$/data/IT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/JE.json" afterPath="$PROJECT_DIR$/data/JE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/JM.json" afterPath="$PROJECT_DIR$/data/JM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/JO.json" afterPath="$PROJECT_DIR$/data/JO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/JP.json" afterPath="$PROJECT_DIR$/data/JP.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KE.json" afterPath="$PROJECT_DIR$/data/KE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KG.json" afterPath="$PROJECT_DIR$/data/KG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KH.json" afterPath="$PROJECT_DIR$/data/KH.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KI.json" afterPath="$PROJECT_DIR$/data/KI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KM.json" afterPath="$PROJECT_DIR$/data/KM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KN.json" afterPath="$PROJECT_DIR$/data/KN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KP.json" afterPath="$PROJECT_DIR$/data/KP.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KR.json" afterPath="$PROJECT_DIR$/data/KR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KW.json" afterPath="$PROJECT_DIR$/data/KW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KY.json" afterPath="$PROJECT_DIR$/data/KY.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/KZ.json" afterPath="$PROJECT_DIR$/data/KZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LA.json" afterPath="$PROJECT_DIR$/data/LA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LB.json" afterPath="$PROJECT_DIR$/data/LB.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LC.json" afterPath="$PROJECT_DIR$/data/LC.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LI.json" afterPath="$PROJECT_DIR$/data/LI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LK.json" afterPath="$PROJECT_DIR$/data/LK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LR.json" afterPath="$PROJECT_DIR$/data/LR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LS.json" afterPath="$PROJECT_DIR$/data/LS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LT.json" afterPath="$PROJECT_DIR$/data/LT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LU.json" afterPath="$PROJECT_DIR$/data/LU.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LV.json" afterPath="$PROJECT_DIR$/data/LV.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/LY.json" afterPath="$PROJECT_DIR$/data/LY.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MA.json" afterPath="$PROJECT_DIR$/data/MA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MC.json" afterPath="$PROJECT_DIR$/data/MC.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MD.json" afterPath="$PROJECT_DIR$/data/MD.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ME.json" afterPath="$PROJECT_DIR$/data/ME.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MF.json" afterPath="$PROJECT_DIR$/data/MF.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MG.json" afterPath="$PROJECT_DIR$/data/MG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MH.json" afterPath="$PROJECT_DIR$/data/MH.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MK.json" afterPath="$PROJECT_DIR$/data/MK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ML.json" afterPath="$PROJECT_DIR$/data/ML.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MM.json" afterPath="$PROJECT_DIR$/data/MM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MN.json" afterPath="$PROJECT_DIR$/data/MN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MO.json" afterPath="$PROJECT_DIR$/data/MO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MP.json" afterPath="$PROJECT_DIR$/data/MP.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MQ.json" afterPath="$PROJECT_DIR$/data/MQ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MR.json" afterPath="$PROJECT_DIR$/data/MR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MS.json" afterPath="$PROJECT_DIR$/data/MS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MT.json" afterPath="$PROJECT_DIR$/data/MT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MU.json" afterPath="$PROJECT_DIR$/data/MU.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MV.json" afterPath="$PROJECT_DIR$/data/MV.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MW.json" afterPath="$PROJECT_DIR$/data/MW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MX.json" afterPath="$PROJECT_DIR$/data/MX.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MY.json" afterPath="$PROJECT_DIR$/data/MY.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/MZ.json" afterPath="$PROJECT_DIR$/data/MZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NA.json" afterPath="$PROJECT_DIR$/data/NA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NC.json" afterPath="$PROJECT_DIR$/data/NC.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NE.json" afterPath="$PROJECT_DIR$/data/NE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NF.json" afterPath="$PROJECT_DIR$/data/NF.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NG.json" afterPath="$PROJECT_DIR$/data/NG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NI.json" afterPath="$PROJECT_DIR$/data/NI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NL.json" afterPath="$PROJECT_DIR$/data/NL.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NO.json" afterPath="$PROJECT_DIR$/data/NO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NP.json" afterPath="$PROJECT_DIR$/data/NP.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NR.json" afterPath="$PROJECT_DIR$/data/NR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NU.json" afterPath="$PROJECT_DIR$/data/NU.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/NZ.json" afterPath="$PROJECT_DIR$/data/NZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/OM.json" afterPath="$PROJECT_DIR$/data/OM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PA.json" afterPath="$PROJECT_DIR$/data/PA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PE.json" afterPath="$PROJECT_DIR$/data/PE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PF.json" afterPath="$PROJECT_DIR$/data/PF.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PG.json" afterPath="$PROJECT_DIR$/data/PG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PH.json" afterPath="$PROJECT_DIR$/data/PH.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PK.json" afterPath="$PROJECT_DIR$/data/PK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PL.json" afterPath="$PROJECT_DIR$/data/PL.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PM.json" afterPath="$PROJECT_DIR$/data/PM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PN.json" afterPath="$PROJECT_DIR$/data/PN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PR.json" afterPath="$PROJECT_DIR$/data/PR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PS.json" afterPath="$PROJECT_DIR$/data/PS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PT.json" afterPath="$PROJECT_DIR$/data/PT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PW.json" afterPath="$PROJECT_DIR$/data/PW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/PY.json" afterPath="$PROJECT_DIR$/data/PY.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/QA.json" afterPath="$PROJECT_DIR$/data/QA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RE.json" afterPath="$PROJECT_DIR$/data/RE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RO.json" afterPath="$PROJECT_DIR$/data/RO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RS.json" afterPath="$PROJECT_DIR$/data/RS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RU.json" afterPath="$PROJECT_DIR$/data/RU.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/RW.json" afterPath="$PROJECT_DIR$/data/RW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SA.json" afterPath="$PROJECT_DIR$/data/SA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SB.json" afterPath="$PROJECT_DIR$/data/SB.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SC.json" afterPath="$PROJECT_DIR$/data/SC.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SD.json" afterPath="$PROJECT_DIR$/data/SD.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SE.json" afterPath="$PROJECT_DIR$/data/SE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SG.json" afterPath="$PROJECT_DIR$/data/SG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SH.json" afterPath="$PROJECT_DIR$/data/SH.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SI.json" afterPath="$PROJECT_DIR$/data/SI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SJ.json" afterPath="$PROJECT_DIR$/data/SJ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SK.json" afterPath="$PROJECT_DIR$/data/SK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SL.json" afterPath="$PROJECT_DIR$/data/SL.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SM.json" afterPath="$PROJECT_DIR$/data/SM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SN.json" afterPath="$PROJECT_DIR$/data/SN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SO.json" afterPath="$PROJECT_DIR$/data/SO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SR.json" afterPath="$PROJECT_DIR$/data/SR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SS.json" afterPath="$PROJECT_DIR$/data/SS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ST.json" afterPath="$PROJECT_DIR$/data/ST.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SV.json" afterPath="$PROJECT_DIR$/data/SV.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SX.json" afterPath="$PROJECT_DIR$/data/SX.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SY.json" afterPath="$PROJECT_DIR$/data/SY.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/SZ.json" afterPath="$PROJECT_DIR$/data/SZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TC.json" afterPath="$PROJECT_DIR$/data/TC.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TD.json" afterPath="$PROJECT_DIR$/data/TD.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TF.json" afterPath="$PROJECT_DIR$/data/TF.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TG.json" afterPath="$PROJECT_DIR$/data/TG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TH.json" afterPath="$PROJECT_DIR$/data/TH.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TJ.json" afterPath="$PROJECT_DIR$/data/TJ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TK.json" afterPath="$PROJECT_DIR$/data/TK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TL.json" afterPath="$PROJECT_DIR$/data/TL.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TM.json" afterPath="$PROJECT_DIR$/data/TM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TN.json" afterPath="$PROJECT_DIR$/data/TN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TO.json" afterPath="$PROJECT_DIR$/data/TO.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TR.json" afterPath="$PROJECT_DIR$/data/TR.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TT.json" afterPath="$PROJECT_DIR$/data/TT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TV.json" afterPath="$PROJECT_DIR$/data/TV.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TW.json" afterPath="$PROJECT_DIR$/data/TW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TZ.json" afterPath="$PROJECT_DIR$/data/TZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/UA.json" afterPath="$PROJECT_DIR$/data/UA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/UG.json" afterPath="$PROJECT_DIR$/data/UG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/UM.json" afterPath="$PROJECT_DIR$/data/UM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/US.json" afterPath="$PROJECT_DIR$/data/US.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/UY.json" afterPath="$PROJECT_DIR$/data/UY.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/UZ.json" afterPath="$PROJECT_DIR$/data/UZ.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/VA.json" afterPath="$PROJECT_DIR$/data/VA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/VC.json" afterPath="$PROJECT_DIR$/data/VC.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/VE.json" afterPath="$PROJECT_DIR$/data/VE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/VG.json" afterPath="$PROJECT_DIR$/data/VG.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/VI.json" afterPath="$PROJECT_DIR$/data/VI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/VN.json" afterPath="$PROJECT_DIR$/data/VN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/VU.json" afterPath="$PROJECT_DIR$/data/VU.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/WF.json" afterPath="$PROJECT_DIR$/data/WF.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/WS.json" afterPath="$PROJECT_DIR$/data/WS.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/XK.json" afterPath="$PROJECT_DIR$/data/XK.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/YE.json" afterPath="$PROJECT_DIR$/data/YE.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/YT.json" afterPath="$PROJECT_DIR$/data/YT.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ZA.json" afterPath="$PROJECT_DIR$/data/ZA.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ZM.json" afterPath="$PROJECT_DIR$/data/ZM.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ZW.json" afterPath="$PROJECT_DIR$/data/ZW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.py" afterPath="$PROJECT_DIR$/database.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_answer_set.py" afterPath="$PROJECT_DIR$/generate_answer_set.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/questions.json" afterPath="$PROJECT_DIR$/questions.json" />
+    </list>
+    <ignored path="Alexa.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Alexa$generate_answer_set.coverage" NAME="generate_answer_set Coverage Results" MODIFIED="1488842611576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Alexa$database.coverage" NAME="database Coverage Results" MODIFIED="1488847361437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Alexa" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="database.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parseCountries.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parseCountries.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#687#1336#0" expanded="false" />
+                <element signature="e#1367#1985#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate_answer_set.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate_answer_set.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questions.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/questions.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="74" column="101" selection-start-line="74" selection-start-column="101" selection-end-line="74" selection-end-column="101" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/game.py" />
+        <option value="$PROJECT_DIR$/parseCountries.py" />
+        <option value="$PROJECT_DIR$/generate_answer_set.py" />
+        <option value="$PROJECT_DIR$/database.py" />
+        <option value="$PROJECT_DIR$/questions.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alexa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alexa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alexa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alexa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alexa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Python.database">
+    <configuration default="false" name="generate_answer_set" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_answer_set.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="database" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="Alexa" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Alexa" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Alexa" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.Alexa" />
+      <item index="1" class="java.lang.String" itemvalue="Python.generate_answer_set" />
+      <item index="2" class="java.lang.String" itemvalue="Python.database" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.database" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generate_answer_set" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67d71c22-bafa-4ae6-92d8-d78adf37d16e" name="Default" comment="" />
+      <created>1488588861883</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488588861883</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15219124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3482972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39628482" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35913312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33126935" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3482972" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39628482" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35913312" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15219124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33126935" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parseCountries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#687#1336#0" expanded="false" />
+            <element signature="e#1367#1985#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parseCountries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#687#1336#0" expanded="false" />
+            <element signature="e#1367#1985#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/AE.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/US.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/hm.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1710">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/md.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9000">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/fk.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4995">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/us.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/cu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9090">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/ad.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6840">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/AD.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="83" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_answer_set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parseCountries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#687#1336#0" expanded="false" />
+            <element signature="e#1367#1985#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="74" column="101" selection-start-line="74" selection-start-column="101" selection-end-line="74" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -4,7 +4,7 @@
     "The capital of #COUNTRY# is #ANSWER#."
   ],
   "population": [
-    "What is the population of #COUNTRY#?",
+    "What is the population of #COUNTRY#, rounded to the nearest ten thousand?",
     "The population of #COUNTRY# is #ANSWER#."
   ],
   "region": [
@@ -24,15 +24,15 @@
     "The languages of #COUNTRY# are #ANSWER#."
   ],
   "area": [
-    "What is the total area of #COUNTRY#?",
+    "What is the total area of #COUNTRY#, in kilometers squared?",
     "The total area of #COUNTRY# is #ANSWER#."
   ],
   "land": [
-    "What is the land area of #COUNTRY#?",
+    "What is the land area of #COUNTRY#, in kilometers squared?",
     "The land area of #COUNTRY# is #ANSWER#."
   ],
   "water": [
-    "What is the water area of #COUNTRY#?",
+    "What is the water area of #COUNTRY#, in kilometers squared?",
     "The water area of #COUNTRY# is #ANSWER#."
   ],
   "climate": [
@@ -40,39 +40,39 @@
     "The climate of #COUNTRY# is #ANSWER#."
   ],
   "median_age_male": [
-    "What is the median age of males in #COUNTRY#?",
+    "What is the median age of males in #COUNTRY#, rounded to the tens place?",
     "The medium age of males in #COUNTRY# is #ANSWER#."
   ],
   "median_age_female": [
-    "What is the median age of females in #COUNTRY#?",
+    "What is the median age of females in #COUNTRY#, rounded to the tens place?",
     "The medium age of females in #COUNTRY# is #ANSWER#."
   ],
   "life_expectancy_male": [
-    "What is the life expectancy of males in #COUNTRY#?",
+    "What is the life expectancy of males in #COUNTRY#, rounded to the tens place?",
     "The life expectancy of males in #COUNTRY# is #ANSWER#."
   ],
   "life_expectancy_female": [
-    "What is the life expectancy of females in #COUNTRY#?",
+    "What is the life expectancy of females in #COUNTRY#, rounded to the tens place?",
     "The life expectancy of females in #COUNTRY# is #ANSWER#."
   ],
   "literacy": [
-    "What is the literacy rate in #COUNTRY#?",
+    "What is the literacy rate in #COUNTRY#, rounded to the tens place?",
     "The literacy rate in #COUNTRY# is #ANSWER#"
   ],
   "literacy_male": [
-    "What is the literacy rate of males in #COUNTRY#?",
+    "What is the literacy rate of males in #COUNTRY#, rounded to the tens place?",
     "The male literacy rate in #COUNTRY# is #ANSWER#"
   ],
   "literacy_female": [
-    "What is the literacy rate of females in #COUNTRY#?",
+    "What is the literacy rate of females in #COUNTRY#, rounded to the tens place?",
     "The female literacy rate in #COUNTRY# is #ANSWER#."
   ],
   "unemployment": [
-    "What is the unemployment rate in #COUNTRY#?",
+    "What is the unemployment rate in #COUNTRY#, rounded to the tens place?",
     "The unemployment rate in #COUNTRY# is #ANSWER#."
   ],
   "poverty_line": [
-    "What percent of the population in #COUNTRY# is below the poverty line?",
+    "What percent of the population in #COUNTRY# is below the poverty line, rounded to the tens place?",
     "#ANSWER# of the population in #COUNTRY# is below the poverty line."
   ],
   "larger_population": [
