@@ -1,6 +1,7 @@
 import json
 import requests
 import random
+import re
 
 
 def gen(howMany):
@@ -94,8 +95,8 @@ def generate_qa(relevant):
             answer = answer.replace("#COUNTRY#", country)
 
             if '#COUNTRY2#' not in question:
-                answer = answer.replace('#ANSWER#', str(country_answers[choice]))
-                singular_answer = str(country_answers[choice])
+                singular_answer = round_answer(choice, country_answers[choice])
+                answer = answer.replace('#ANSWER#', str(singular_answer))
             else:
                 country2 = country
                 country2_a2c = country_a2c
@@ -135,6 +136,31 @@ def generate_qa(relevant):
             print(answer)
             print(singular_answer)
             return question, answer, singular_answer
+
+def round_answer(choice, answer):
+    population = ['population']
+    kilometers_squared = ['area', 'land', 'water']
+    age = ['median_age_male', 'median_age_female', 'life_expectancy_male', 'life_expectancy_female']
+    percent = ['literacy_male', 'literacy_female', 'unemployment', 'poverty_line']
+
+    if choice in population:
+        answer = round(answer / 1000000) * 1000000
+    elif choice in kilometers_squared:
+        temp = re.match('(\d*) kilometers squared', answer).group(1)
+        temp = round(int(float(temp)) / 1000) * 1000
+        answer = str(temp) + ' kilometers squared'
+    elif choice in age:
+        temp = re.match('(\d*) years', answer).group(1)
+        temp = round(int(float(temp)) / 10) * 10
+        answer = str(temp) + ' years'
+    elif choice in percent:
+        temp = re.match('(\d*)%', answer).group(1)
+        temp = round(int(float(temp)) / 10) * 10
+        answer = str(temp) + '%'
+    else:
+        pass
+
+    return answer
 
 
 if __name__ == "__main__":

@@ -10,7 +10,8 @@ def answer_set():
         with open('data/' + file) as country:
             js = json.load(country)
             for key in js.keys():
-                answer.add(js[key])
+                if key != 'climate':
+                    answer.add(js[key])
 
     return answer
 

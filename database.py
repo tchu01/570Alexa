@@ -24,13 +24,16 @@ def run():
                 data['capital'] = json_data['capital']
             if 'population' in json_data:
                 val = json_data['population']
-                data['population'] = round(val / 1000000.0) * 1000000.0
+                if val is not None:
+                    # data['population'] = round(val / 1000000.0) * 1000000.0
+                    data['population'] = int(float(val))
             if 'region' in json_data:
                 data['region'] = json_data['region']
             if 'area' in json_data:
                 val = json_data['area']
                 if val is not None:
-                    data['area'] = str(round(val / 1000.0) * 1000.0) + ' kilometers squared'
+                    # data['area'] = round(val / 1000.0) * 1000.0
+                    data['area'] = str(int(float(val))) + ' kilometers squared'
             if 'latlng' in json_data:
                 if len(json_data['latlng']) == 2:
                     data['latlng'] = str(json_data['latlng'][0]) + ', ' + str(json_data['latlng'][1])
@@ -79,8 +82,9 @@ def run():
                             if land is not None:
                                 land = land.group(1)
                                 land = land.replace(',', '')
-                                land = float(land)
-                                data['land'] = round(land / 1000.0) * 1000.0
+                                land = int(float(land))
+                                # data['land'] = round(land / 1000.0) * 1000.0
+                                data['land'] = str(land) + ' kilometers squared'
                             else:
                                 print('No land')
                         if 'water' in json_data['Geography']['Area']:
@@ -89,8 +93,9 @@ def run():
                             if water is not None:
                                 water = water.group(1)
                                 water = water.replace(',', '')
-                                water = float(water)
-                                data['water'] = round(water / 1000.0) * 1000.0
+                                water = int(float(water))
+                                # data['water'] = round(water / 1000.0) * 1000.0
+                                data['water'] = str(water) + ' kilometers squared'
                             else:
                                 print('No water')
                     else:
@@ -110,8 +115,9 @@ def run():
                         age = re.match("(\d*|\d*.\d*)", median_age_male)
                         if age is not None:
                             age = age.group(1)
-                            age = float(age)
-                            data['median_age_male'] = str(round(age / 10.0) * 10.0) + ' years'
+                            age = int(float(age))
+                            # data['median_age_male'] = round(age / 10.0) * 10.0
+                            data['median_age_male'] = str(age) + ' years'
                         else:
                             print('No median age male')
 
@@ -119,8 +125,9 @@ def run():
                         age = re.match("(\d*|\d*.\d*)", median_age_female)
                         if age is not None:
                             age = age.group(1)
-                            age = float(age)
-                            data['median_age_female'] = str(round(age / 10.0) * 10.0) + ' years'
+                            age = int(float(age))
+                            # data['median_age_female'] = round(age / 10.0) * 10.0
+                            data['median_age_female'] = str(age) + ' years'
                         else:
                             print('No median age female')
                     else:
@@ -131,8 +138,9 @@ def run():
                         age = re.match("(\d*|\d*.\d*) years", life_expectancy_male)
                         if age is not None:
                             age = age.group(1)
-                            age = float(age)
-                            data['life_expectancy_male'] = str(round(age / 10.0) * 10.0) + ' years'
+                            age = int(float(age))
+                            # data['life_expectancy_male'] = round(age / 10.0) * 10.0
+                            data['life_expectancy_male'] = str(age) + ' years'
                         else:
                             print('No life expectancy male')
 
@@ -140,8 +148,9 @@ def run():
                         age = re.match("(\d*|\d*.\d*) years", life_expectancy_female)
                         if age is not None:
                             age = age.group(1)
-                            age = float(age)
-                            data['life_expectancy_female'] = str(round(age / 10.0) * 10.0) + ' years'
+                            age = int(float(age))
+                            # data['life_expectancy_female'] = round(age / 10.0) * 10.0
+                            data['life_expectancy_female'] = str(age) + ' years'
                         else:
                             print('No life expectancy female')
                     else:
@@ -152,8 +161,9 @@ def run():
                         percent = re.match("(\d*|\d*.\d*)\%", literacy_male)
                         if percent is not None:
                             percent = percent.group(1)
-                            percent = float(percent)
-                            data['literacy_male'] = str(round(percent / 10.0) * 10.0) + '%'
+                            percent = int(float(percent))
+                            # data['literacy_male'] = round(percent / 10.0) * 10.0
+                            data['literacy_male'] = str(percent) + '%'
                         else:
                             print('No literacy male')
 
@@ -161,8 +171,9 @@ def run():
                         percent = re.match("(\d*|\d*.\d*)\%", literacy_female)
                         if percent is not None:
                             percent = percent.group(1)
-                            percent = float(percent)
-                            data['literacy_female'] = str(round(percent / 10.0) * 10.0) + '%'
+                            percent = int(float(percent))
+                            # data['literacy_female'] = round(percent / 10.0) * 10.0
+                            data['literacy_female'] = str(percent) + '%'
                         else:
                             print('No literacy female')
                     else:
@@ -173,9 +184,9 @@ def run():
                         percent = re.match("(\d*|\d*.\d*)\%", unemployment)
                         if percent is not None:
                             percent = percent.group(1)
-                            percent = float(percent)
-                            data['unemployment'] = str(round(percent / 10.0) * 10.0) + '%'
-                    else:
+                            percent = int(float(percent))
+                            # data['unemployment'] = round(percent / 10.0) * 10.0
+                            data['unemployment'] = str(percent) + '%'
                         print('No Economy/Unemployment rate')
 
                     if 'Economy' in json_data and 'Population below poverty line' in json_data['Economy']:
@@ -183,8 +194,9 @@ def run():
                         percent = re.match("(\d*|\d*.\d*)\%", poverty_line)
                         if percent is not None:
                             percent = percent.group(1)
-                            percent = float(percent)
-                            data['poverty_line'] = str(round(percent / 10.0) * 10.0) + '%'
+                            percent = int(float(percent))
+                            # data['poverty_line'] = round(percent / 10.0) * 10.0
+                            data['poverty_line'] = str(percent) + '%'
                     else:
                         print('No Economy/Population below poverty line')
 
@@ -207,7 +219,6 @@ def get_countries_list():
     response = requests.get(url)
     json_data = json.loads(response.content.decode('utf-8', 'ignore'))
     for country in json_data:
-        # print country['name']
         country_list.add((country['name'], country['alpha2Code'], country['alpha3Code']))
 
     # second pass
@@ -215,7 +226,6 @@ def get_countries_list():
     response = requests.get(url)
     json_data = json.loads(response.content.decode('utf-8', 'ignore'))
     for country in json_data:
-        # print country['name']
         country_list.add((country['name'], country['alpha2Code'], country['alpha3Code']))
 
     return country_list
