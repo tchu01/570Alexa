@@ -3,6 +3,74 @@ import requests
 import os
 import re
 
+'''
+Notes regarding database:
+- database should be for one topic (ie: countries), and is composed of individual choices (ie: China, United States)
+- each individual choice is saved as a json
+- for each json, keys represent question type and values represent the answers (stored in a list)
+
+To add question to database:
+- create a question and answer template inside questions.json, where the key is the same key as the one in the database
+  and the value is a list containing the question template and then the answer template
+- create a dictionary of dictionaries, where the key is the choice to update, and the value is a dictionary of extra answers
+'''
+
+def append_dictionary(choice, dict):
+    pass
+
+def parse_rest_countries():
+    cl = get_countries_list()
+    a3c_to_country = a3c_to_country_dict(cl)
+
+    ret = {}
+    for country, country_a2c, country_a3c in sorted(cl):
+        print(country_a2c)
+        data = {}
+
+        url = 'https://restcountries.eu/rest/v2/alpha/' + country_a2c
+        response = requests.get(url)
+        jsd = json.loads(response.content.decode('utf-8', 'ignore'))
+
+        data['country'] = list(country)
+
+        if 'alpha2Code' in jsd:
+            data['alpha2Code'] = list(jsd['alpha2Code'])
+        if 'alpha3Code' in jsd:
+            data['alpha3Code'] = list(jsd['alpha3Code'])
+        if 'area' in jsd:
+            val = jsd['area']
+            if val is not None:
+                data['area'] = list(str(int(val)) + ' kilometers squared')
+        if 'borders' in jsd:
+            borders = jsd['borders']
+            if len(borders) > 0:
+                str_borders = jsd['borders']
+                str_borders = [a3c_to_country[a3c] for a3c in str_borders]
+                data['borders'] = str_borders
+        if 'capital' in jsd:
+            data['capital'] = list(jsd['capital'])
+        if 'languages' in jsd:
+            languages = jsd['languages']
+            if len(languages) > 0:
+                languages = [lang_dict['name'] for lang_dict in languages]
+                data['languages'] = languages
+        if 'latlng' in jsd:
+            if len(jsd['latlng']) == 2:
+                data['latlng'] = list(str(jsd['latlng'][0]) + ', ' + str(jsd['latlng'][1]))
+        if 'population' in jsd:
+            val = jsd['population']
+            if val is not None:
+                data['population'] = list(int(val))
+        if 'region' in jsd:
+            data['region'] = list(jsd['region'])
+
+        ret[country] = data
+
+    return ret
+
+def parse_wfb():
+    pass
+
 
 def run():
     cl = get_countries_list()
