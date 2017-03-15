@@ -95,8 +95,10 @@ def generate_qa(relevant):
             answer = answer.replace("#COUNTRY#", country)
 
             if '#COUNTRY2#' not in question:
-                singular_answer = round_answer(choice, country_answers[choice])
-                answer = answer.replace('#ANSWER#', str(singular_answer))
+                singular_answer = country_answers[choice]
+                fill = round_answer(choice, country_answers[choice])
+
+                answer = answer.replace('#ANSWER#', str(fill))
             else:
                 country2 = country
                 country2_a2c = country_a2c
@@ -118,8 +120,8 @@ def generate_qa(relevant):
                     elif choice == 'larger_area':
                         choice = 'area'
 
-                    val = country_answers[choice]
-                    val2 = country2_answers[choice]
+                    val = country_answers[choice][0]
+                    val2 = country2_answers[choice][0]
                     print(val)
                     print(val2)
 
@@ -135,33 +137,49 @@ def generate_qa(relevant):
             print(question)
             print(answer)
             print(singular_answer)
+            print()
             return question, answer, singular_answer
 
-def round_answer(choice, answer):
+def round_answer(choice, answer_list):
     population = ['population']
     kilometers_squared = ['area', 'land', 'water']
+    kilometers = ['coastline']
     age = ['median_age_male', 'median_age_female', 'life_expectancy_male', 'life_expectancy_female']
-    percent = ['literacy_male', 'literacy_female', 'unemployment', 'poverty_line']
+    percent = ['pop_growth_rate', 'health_expenditures', 'obesity', 'education_expenditures', 'literacy_male', 'literacy_female', 'unemployment', 'poverty_line']
+
+    one_choice = ['borders', 'languages', 'natural_resources', 'ethnic_groups']
+
+    ret = answer_list[0]
 
     if choice in population:
-        answer = round(answer / 1000000) * 1000000
+        val = answer_list[0]
+        ret = round(val / 1000000) * 1000000
+        answer_list[0] = ret
     elif choice in kilometers_squared:
-        temp = re.match('(\d*) kilometers squared', answer).group(1)
+        val = answer_list[0]
+        temp = re.match('(\d*) kilometers squared', val).group(1)
         temp = round(int(float(temp)) / 1000) * 1000
-        answer = str(temp) + ' kilometers squared'
+        ret = str(temp) + ' kilometers squared'
+        answer_list[0] = ret
     elif choice in age:
-        temp = re.match('(\d*) years', answer).group(1)
+        val = answer_list[0]
+        temp = re.match('(\d*) years', val).group(1)
         temp = round(int(float(temp)) / 10) * 10
-        answer = str(temp) + ' years'
+        ret = str(temp) + ' years'
+        answer_list[0] = ret
     elif choice in percent:
-        temp = re.match('(\d*)%', answer).group(1)
+        val = answer_list[0]
+        temp = re.match('(\d*)%', val).group(1)
         temp = round(int(float(temp)) / 10) * 10
-        answer = str(temp) + '%'
+        ret = str(temp) + '%'
+        answer_list[0] = ret
+    elif choice in one_choice:
+        ret = ', '.join(answer_list)
     else:
         pass
 
-    return answer
+    return ret
 
 
 if __name__ == "__main__":
-    gen()
+    gen(5)

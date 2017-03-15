@@ -12,16 +12,16 @@
     "The total area of #COUNTRY# is #ANSWER#."
   ],
   "borders": [
-    "What countries border #COUNTRY#?",
-    "#COUNTRY# is bordered by #ANSWER#."
+    "What is one country that borders #COUNTRY#?",
+    "Correct. All countries that border #COUNTRY# are: #ANSWER#."
   ],
   "capital": [
     "What is the capital of #COUNTRY#?",
     "The capital of #COUNTRY# is #ANSWER#."
   ],
   "languages": [
-    "What are the languages in #COUNTRY#?",
-    "The languages of #COUNTRY# are #ANSWER#."
+    "What is one language in #COUNTRY#?",
+    "Correct. All languages in #COUNTRY# are: #ANSWER#."
   ],
   "latlng": [
     "What are the latitude and longitude coordinates of #COUNTRY#?",
@@ -36,6 +36,8 @@
     "#COUNTRY# is in the region #ANSWER#."
   ],
 
+
+
   "land": [
     "What is the land area of #COUNTRY#, in kilometers squared and rounded to the nearest thousand?",
     "The land area of #COUNTRY# is #ANSWER#."
@@ -44,9 +46,21 @@
     "What is the water area of #COUNTRY#, in kilometers squared and rounded to the nearest thousand?",
     "The water area of #COUNTRY# is #ANSWER#."
   ],
+  "coastline": [
+    "How many kilometers of coastline does #COUNTRY# have rounded to the nearest thousand?",
+    "#COUNTRY# has #ANSWER# of coastline."
+  ],
   "climate": [
     "What is the climate of #COUNTRY#?",
     "The climate of #COUNTRY# is #ANSWER#."
+  ],
+  "natural_resources": [
+    "What is one of the natural resources of #COUNTRY#?",
+    "Correct. All of the natural resources of #COUNTRY# are: #ANSWER#."
+  ],
+  "ethnic_groups": [
+    "What is one of the ethnic groups in #COUNTRY#?",
+    "Correct. All of the ethnic groups in #COUNTRY# are: #ANSWER#."
   ],
   "median_age_male": [
     "What is the median age of males in #COUNTRY#, rounded to the tens place?",
@@ -56,6 +70,10 @@
     "What is the median age of females in #COUNTRY#, rounded to the tens place?",
     "The medium age of females in #COUNTRY# is #ANSWER#."
   ],
+  "pop_growth_rate": [
+    "What is the population growth rate in #COUNTRY#, rounded to the tens place?",
+    "The population growth rate in #COUNTRY# is #ANSWER#."
+  ],
   "life_expectancy_male": [
     "What is the life expectancy of males in #COUNTRY#, rounded to the tens place?",
     "The life expectancy of males in #COUNTRY# is #ANSWER#."
@@ -64,9 +82,21 @@
     "What is the life expectancy of females in #COUNTRY#, rounded to the tens place?",
     "The life expectancy of females in #COUNTRY# is #ANSWER#."
   ],
+  "health_expenditures": [
+    "What percent of the GDP does #COUNTRY# use for health expenditures, rounded to the tens place?",
+    "#COUNTRY# uses #ANSWER# of their GDP for health expenditures."
+  ],
+  "obesity": [
+    "What percent of adults in #COUNTRY# are obese, rounded to the tens place?",
+    "#ANSWER# of adults in #COUNTRY# are obese."
+  ],
+  "education_expenditures": [
+    "What percent of the GDP does #COUNTRY# use for education expenditures, rounded to the tens place?",
+    "#COUNTRY# uses #ANSWER# of their GDP for education expenditures."
+  ],
   "literacy": [
     "What is the literacy rate in #COUNTRY#, rounded to the tens place?",
-    "The literacy rate in #COUNTRY# is #ANSWER#"
+    "The literacy rate in #COUNTRY# is #ANSWER#."
   ],
   "literacy_male": [
     "What is the literacy rate of males in #COUNTRY#, rounded to the tens place?",
@@ -76,6 +106,9 @@
     "What is the literacy rate of females in #COUNTRY#, rounded to the tens place?",
     "The female literacy rate in #COUNTRY# is #ANSWER#."
   ],
+
+
+
   "unemployment": [
     "What is the unemployment rate in #COUNTRY#, rounded to the tens place?",
     "The unemployment rate in #COUNTRY# is #ANSWER#."
@@ -84,6 +117,7 @@
     "What percent of the population in #COUNTRY# is below the poverty line, rounded to the tens place?",
     "#ANSWER# of the population in #COUNTRY# is below the poverty line."
   ],
+
   "larger_population": [
     "Which country has the bigger population, #COUNTRY# or #COUNTRY2#?",
     "#ANSWER# has the bigger population."

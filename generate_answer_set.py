@@ -4,16 +4,18 @@ import requests
 
 def answer_set():
     data = os.listdir('data')
-    answer = set()
+    ret = set()
 
     for file in data:
         with open('data/' + file) as country:
             js = json.load(country)
             for key in js.keys():
                 if key != 'climate':
-                    answer.add(js[key])
+                    answers = js[key]
+                    for answer in answers:
+                        ret.add(answer)
 
-    return answer
+    return ret
 
 
 if __name__ == '__main__':

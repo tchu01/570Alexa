@@ -1,1 +1,1 @@
-{"languages": "French", "country": "Mayotte", "region": "Africa", "capital": "Mamoudzou", "population": 226915, "latlng": "-12.83333333, 45.16666666", "borders": "none"}
+{"languages": ["French"], "population": [226915], "alpha2Code": ["YT"], "capital": ["Mamoudzou"], "region": ["Africa"], "country": ["Mayotte"], "alpha3Code": ["MYT"], "latlng": ["-12.83333333, 45.16666666"]}

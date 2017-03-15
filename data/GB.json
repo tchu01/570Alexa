@@ -1,1 +1,1 @@
-{"languages": "English", "country": "United Kingdom of Great Britain and Northern Ireland", "region": "Europe", "capital": "London", "population": 65110000, "latlng": "54.0, -2.0", "borders": "Ireland", "area": "242900 kilometers squared"}
+{"latlng": ["54.0, -2.0"], "languages": ["English"], "population": [65110000], "alpha2Code": ["GB"], "capital": ["London"], "region": ["Europe"], "country": ["United Kingdom of Great Britain and Northern Ireland"], "alpha3Code": ["GBR"], "borders": ["Ireland"], "area": ["242900 kilometers squared"]}

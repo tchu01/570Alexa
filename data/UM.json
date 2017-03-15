@@ -1,1 +1,1 @@
-{"languages": "English", "country": "United States Minor Outlying Islands", "region": "Americas", "capital": "", "population": 300, "borders": "none"}
+{"languages": ["English"], "population": [300], "alpha2Code": ["UM"], "capital": [""], "region": ["Americas"], "country": ["United States Minor Outlying Islands"], "alpha3Code": ["UMI"]}

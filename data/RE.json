@@ -1,1 +1,1 @@
-{"languages": "French", "country": "R\u00e9union", "region": "Africa", "capital": "Saint-Denis", "population": 840974, "latlng": "-21.15, 55.5", "borders": "none"}
+{"languages": ["French"], "population": [840974], "alpha2Code": ["RE"], "capital": ["Saint-Denis"], "region": ["Africa"], "country": ["R\u00e9union"], "alpha3Code": ["REU"], "latlng": ["-21.15, 55.5"]}

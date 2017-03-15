@@ -1,1 +1,1 @@
-{"languages": "French", "country": "French Guiana", "region": "Americas", "capital": "Cayenne", "population": 254541, "latlng": "4.0, -53.0", "borders": "Brazil and Suriname"}
+{"languages": ["French"], "population": [254541], "alpha2Code": ["GF"], "capital": ["Cayenne"], "region": ["Americas"], "country": ["French Guiana"], "alpha3Code": ["GUF"], "borders": ["Brazil", "Suriname"], "latlng": ["4.0, -53.0"]}

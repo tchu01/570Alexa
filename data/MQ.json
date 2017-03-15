@@ -1,1 +1,1 @@
-{"languages": "French", "country": "Martinique", "region": "Americas", "capital": "Fort-de-France", "population": 378243, "latlng": "14.666667, -61.0", "borders": "none"}
+{"languages": ["French"], "population": [378243], "alpha2Code": ["MQ"], "capital": ["Fort-de-France"], "region": ["Americas"], "country": ["Martinique"], "alpha3Code": ["MTQ"], "latlng": ["14.666667, -61.0"]}

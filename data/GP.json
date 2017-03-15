@@ -1,1 +1,1 @@
-{"languages": "French", "country": "Guadeloupe", "region": "Americas", "capital": "Basse-Terre", "population": 400132, "latlng": "16.25, -61.583333", "borders": "none"}
+{"languages": ["French"], "population": [400132], "alpha2Code": ["GP"], "capital": ["Basse-Terre"], "region": ["Americas"], "country": ["Guadeloupe"], "alpha3Code": ["GLP"], "latlng": ["16.25, -61.583333"]}
