@@ -130,7 +130,7 @@ def generate_qa(relevant):
                         singular_answer = country
                     else:
                         final = country2
-                        singular_answer = country
+                        singular_answer = country2
 
                     answer = answer.replace("#ANSWER#", final)
 
