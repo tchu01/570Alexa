@@ -83,6 +83,7 @@ def generate_qa(relevant):
 
             keys = list(country_answers.keys())
             keys.remove('country')
+            keys.remove('climate')
             keys.append('larger_population')
             keys.append('larger_area')
             choice = random.choice(keys)
@@ -161,6 +162,12 @@ def round_answer(choice, answer_list):
         temp = round(int(float(temp)) / 1000) * 1000
         ret = str(temp) + ' kilometers squared'
         answer_list[0] = ret
+    elif choice in kilometers:
+        val = answer_list[0]
+        temp = re.match('(\d*) kilometers', val).group(1)
+        temp = round(int(float(temp)) / 1000) * 1000
+        ret = str(temp) + ' kilometers'
+        answer_list[0] = ret
     elif choice in age:
         val = answer_list[0]
         temp = re.match('(\d*) years', val).group(1)
@@ -182,4 +189,4 @@ def round_answer(choice, answer_list):
 
 
 if __name__ == "__main__":
-    gen(5)
+    gen(20)
