@@ -94,10 +94,6 @@
     "What percent of the GDP does #COUNTRY# use for education expenditures, rounded to the tens place?",
     "#COUNTRY# uses #ANSWER# of their GDP for education expenditures."
   ],
-  "literacy": [
-    "What is the literacy rate in #COUNTRY#, rounded to the tens place?",
-    "The literacy rate in #COUNTRY# is #ANSWER#."
-  ],
   "literacy_male": [
     "What is the literacy rate of males in #COUNTRY#, rounded to the tens place?",
     "The male literacy rate in #COUNTRY# is #ANSWER#"
@@ -106,9 +102,22 @@
     "What is the literacy rate of females in #COUNTRY#, rounded to the tens place?",
     "The female literacy rate in #COUNTRY# is #ANSWER#."
   ],
-
-
-
+  "gdp_growth_rate": [
+    "What is the real growth rate of the GDP for #COUNTRY#, rounded to the tens place?",
+    "The real growth rate of the GDP for #COUNTRY# is #ANSWER#."
+  ],
+  "gdp_per_capita": [
+    "What is the GDP per capita in #COUNTRY#, rounded to the thousands place?",
+    "The GPD per capita in #COUNTRY# is #ANSWER#."
+  ],
+  "agriculture": [
+    "What is one of the agricultural products produced in #COUNTRY#?",
+    "Correct. All of the agricultural products produced in #COUNTRY# are: #ANSWER#."
+  ],
+  "industries": [
+    "What is one of the industries in #COUNTRY#?",
+    "Correct. All of the industries in #COUNTRY# are: #ANSWER#."
+  ],
   "unemployment": [
     "What is the unemployment rate in #COUNTRY#, rounded to the tens place?",
     "The unemployment rate in #COUNTRY# is #ANSWER#."
@@ -117,6 +126,19 @@
     "What percent of the population in #COUNTRY# is below the poverty line, rounded to the tens place?",
     "#ANSWER# of the population in #COUNTRY# is below the poverty line."
   ],
+  "exports": [
+    "What is one of the exported goods in #COUNTRY#?",
+    "Correct. All of the exported goods in #COUNTRY# are: #ANSWER#."
+  ],
+  "imports": [
+    "What is one of the imported goods in #COUNTRY#?",
+    "Correct. All of the imported goods in #COUNTRY# are: #ANSWER#."
+  ],
+
+
+
+
+
 
   "larger_population": [
     "Which country has the bigger population, #COUNTRY# or #COUNTRY2#?",

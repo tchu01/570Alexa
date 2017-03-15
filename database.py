@@ -17,10 +17,10 @@ To add question to database:
 
 
 def parse():
-    rest_countries = parse_rest_countries()
-    append_database(rest_countries)
-
-    print('Done adding rest countries')
+    # rest_countries = parse_rest_countries()
+    # append_database(rest_countries)
+    #
+    # print('Done adding rest countries')
 
     wfb = parse_wfb()
     append_database(wfb)
@@ -301,10 +301,53 @@ def parse_wfb():
                 else:
                     print("No People and Society/Literacy")
 
+                if 'Economy' in jsd and 'GDP - real growth rate' in jsd['Economy']:
+                    gdp_growth = jsd['Economy']['GDP - real growth rate']['text']
+                    percent = re.match("(\d*|\d*.\d*)\%", gdp_growth)
+                    if percent is not None:
+                        percent = percent.group(1)
+                        percent = int(float(percent))
+                        # data['unemployment'] = round(percent / 10.0) * 10.0
+                        data['gdp_growth_rate'] = [str(percent) + '%']
+                    else:
+                        print("No gdp real growth rate")
+                else:
+                    print('No Economy/GDP - real growth rate')
 
+                if 'Economy' in jsd and 'GDP - per capita (PPP)' in jsd['Economy']:
+                    gdp_per_capita = jsd['Economy']['GDP - per capita (PPP)']['text']
+                    dollar = re.match("\$(\d*|\d*\.\d*)", gdp_per_capita)
+                    if dollar is not None:
+                        dollar = dollar.group(1)
+                        dollar = int(float(dollar))
+                        # data['unemployment'] = round(percent / 10.0) * 10.0
+                        data['gdp_per_capita'] = ['$' + str(dollar)]
+                    else:
+                        print("No gdp per capita")
+                else:
+                    print('No Economy/GDP - per capita (PPP)')
 
+                if 'Economy' in jsd and 'Agriculture - products' in jsd['Economy']:
+                    if 'text' in jsd['Economy']['Agriculture - products']:
+                        val = jsd['Economy']['Agriculture - products']['text']
+                        val = val.split(',')
+                        val = [x.strip(' ') for x in val]
+                        data['agriculture'] = val
+                    else:
+                        print("No agriculture")
+                else:
+                    print('No Economy/Agriculture - products')
 
-
+                if 'Economy' in jsd and 'Industries' in jsd['Economy']:
+                    if 'text' in jsd['Economy']['Industries']:
+                        val = jsd['Economy']['Industries']['text']
+                        val = val.split(',')
+                        val = [x.strip(' ') for x in val]
+                        data['industries'] = val
+                    else:
+                        print("No industries")
+                else:
+                    print('No Economy/industries')
 
                 if 'Economy' in jsd and 'Unemployment rate' in jsd['Economy']:
                     unemployment = jsd['Economy']['Unemployment rate']['text']
@@ -331,6 +374,32 @@ def parse_wfb():
                         print("No population below poverty line")
                 else:
                     print('No Economy/Population below poverty line')
+
+                if 'Economy' in jsd and 'Exports - commodities' in jsd['Economy']:
+                    if 'text' in jsd['Economy']['Exports - commodities']:
+                        val = jsd['Economy']['Exports - commodities']['text']
+                        val = val.split(',')
+                        val = [x.strip(' ') for x in val]
+                        data['exports'] = val
+                    else:
+                        print("No exports")
+                else:
+                    print('No Economy/exports')
+
+                if 'Economy' in jsd and 'Imports - commodities' in jsd['Economy']:
+                    if 'text' in jsd['Economy']['Imports - commodities']:
+                        val = jsd['Economy']['Imports - commodities']['text']
+                        val = val.split(',')
+                        val = [x.strip(' ') for x in val]
+                        data['imports'] = val
+                    else:
+                        print("No imports")
+                else:
+                    print('No Economy/imports')
+
+
+
+
 
             ret[country_a2c] = data
 
