@@ -2,6 +2,36 @@ import json
 import requests
 import random
 import re
+import pickle
+import os
+import datetime
+
+
+def save_rest_countries():
+    with open("rest_countries.p", "wb") as outfile:
+        rest_countries_list = getCountriesList()
+        pickle.dump(rest_countries_list, outfile)
+
+
+def get_rest_countries():
+    with open("rest_countries.p", "rb") as infile:
+        news_list = pickle.load(infile)
+        return news_list
+
+
+def save_news_headline():
+    with open("news_headlines.p", "wb") as outfile:
+        current_time = datetime.time()
+        news_list = getNewsList()
+        news_list = [current_time] + news_list
+        pickle.dump(news_list, outfile)
+
+
+def get_saved_news_headline():
+    with open("news_headlines.p", "rb") as infile:
+        news_list = pickle.load(infile)
+        ret = news_list[1:]
+        return news_list[1:]
 
 
 def gen(howMany):
@@ -128,10 +158,10 @@ def generate_qa(relevant):
 
                     if val > val2:
                         final = country
-                        singular_answer = country
+                        singular_answer = [country]
                     else:
                         final = country2
-                        singular_answer = country2
+                        singular_answer = [country2]
 
                     answer = answer.replace("#ANSWER#", final)
 
@@ -189,4 +219,4 @@ def round_answer(choice, answer_list):
 
 
 if __name__ == "__main__":
-    gen(20)
+    gen(5)
