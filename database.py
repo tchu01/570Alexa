@@ -17,10 +17,10 @@ To add question to database:
 
 
 def parse():
-    # rest_countries = parse_rest_countries()
-    # append_database(rest_countries)
-    #
-    # print('Done adding rest countries')
+    rest_countries = parse_rest_countries()
+    append_database(rest_countries)
+
+    print('Done adding rest countries')
 
     wfb = parse_wfb()
     append_database(wfb)
@@ -107,7 +107,7 @@ def parse_wfb():
                 if 'Geography' in jsd and 'Area' in jsd['Geography']:
                     if 'land' in jsd['Geography']['Area']:
                         val = jsd['Geography']['Area']['land']['text']
-                        land = re.match("(\d*|\d*.\d*) sq km", val)
+                        land = re.match("((\d*|\d*,)*) sq km", val)
                         if land is not None:
                             land = land.group(1)
                             land = land.replace(',', '')
@@ -118,7 +118,7 @@ def parse_wfb():
                             print('No land')
                     if 'water' in jsd['Geography']['Area']:
                         val = jsd['Geography']['Area']['water']['text']
-                        water = re.match("(\d*|\d*.\d*) sq km", val)
+                        water = re.match("((\d*|\d*,)*) sq km", val)
                         if water is not None:
                             water = water.group(1)
                             water = water.replace(',', '')
@@ -133,7 +133,7 @@ def parse_wfb():
                 if 'Geography' in jsd and 'Coastline' in jsd['Geography']:
                     if 'text' in jsd['Geography']['Coastline']:
                         val = jsd['Geography']['Coastline']['text']
-                        coastline = re.match("(\d*|\d*.\d*) km", val)
+                        coastline = re.match("((\d*|\d*,)*) km", val)
                         if coastline is not None:
                             coastline = coastline.group(1)
                             coastline = coastline.replace(',', '')
@@ -184,7 +184,7 @@ def parse_wfb():
 
                 if 'People and Society' in jsd and 'Median age' in jsd['People and Society']:
                     median_age_male = jsd['People and Society']['Median age']['male']['text']
-                    age = re.match("(\d*|\d*.\d*)", median_age_male)
+                    age = re.match("(\d*|\d*\.\d*) years", median_age_male)
                     if age is not None:
                         age = age.group(1)
                         age = int(float(age))
@@ -194,7 +194,7 @@ def parse_wfb():
                         print('No median age male')
 
                     median_age_female = jsd['People and Society']['Median age']['female']['text']
-                    age = re.match("(\d*|\d*.\d*)", median_age_female)
+                    age = re.match("(\d*|\d*\.\d*) years", median_age_female)
                     if age is not None:
                         age = age.group(1)
                         age = int(float(age))
@@ -207,10 +207,9 @@ def parse_wfb():
 
                 if 'People and Society' in jsd and 'Population growth rate' in jsd['People and Society']:
                     pop_growth_rate = jsd['People and Society']['Population growth rate']['text']
-                    percent = re.match("(\d*|\d*.\d*)\%", pop_growth_rate)
+                    percent = re.match("(-?(\d*|\d*\.\d*))\%", pop_growth_rate)
                     if percent is not None:
                         percent = percent.group(1)
-                        print(percent)
                         percent = int(float(percent))
                         data['pop_growth_rate'] = [str(percent) + '%']
                     else:
@@ -220,7 +219,7 @@ def parse_wfb():
 
                 if 'People and Society' in jsd and 'Life expectancy at birth' in jsd['People and Society']:
                     life_expectancy_male = jsd['People and Society']['Life expectancy at birth']['male']['text']
-                    age = re.match("(\d*|\d*.\d*) years", life_expectancy_male)
+                    age = re.match("(\d*|\d*\.\d*) years", life_expectancy_male)
                     if age is not None:
                         age = age.group(1)
                         age = int(float(age))
@@ -229,9 +228,8 @@ def parse_wfb():
                     else:
                         print('No life expectancy male')
 
-                    life_expectancy_female = jsd['People and Society']['Life expectancy at birth']['female'][
-                        'text']
-                    age = re.match("(\d*|\d*.\d*) years", life_expectancy_female)
+                    life_expectancy_female = jsd['People and Society']['Life expectancy at birth']['female']['text']
+                    age = re.match("(\d*|\d*\.\d*) years", life_expectancy_female)
                     if age is not None:
                         age = age.group(1)
                         age = int(float(age))
@@ -244,7 +242,7 @@ def parse_wfb():
 
                 if 'People and Society' in jsd and 'Health expenditures' in jsd['People and Society']:
                     health_expenditures = jsd['People and Society']['Health expenditures']['text']
-                    percent = re.match("(\d*|\d*.\d*)\%", health_expenditures)
+                    percent = re.match("(\d*|\d*\.\d*)\%", health_expenditures)
                     if percent is not None:
                         percent = percent.group(1)
                         percent = int(float(percent))
@@ -256,7 +254,7 @@ def parse_wfb():
 
                 if 'People and Society' in jsd and 'Obesity - adult prevalence rate' in jsd['People and Society']:
                     obesity = jsd['People and Society']['Obesity - adult prevalence rate']['text']
-                    percent = re.match("(\d*|\d*.\d*)\%", obesity)
+                    percent = re.match("(\d*|\d*\.\d*)\%", obesity)
                     if percent is not None:
                         percent = percent.group(1)
                         percent = int(float(percent))
@@ -268,7 +266,7 @@ def parse_wfb():
 
                 if 'People and Society' in jsd and 'Education expenditures' in jsd['People and Society']:
                     health_expenditures = jsd['People and Society']['Education expenditures']['text']
-                    percent = re.match("(\d*|\d*.\d*)\%", health_expenditures)
+                    percent = re.match("(\d*|\d*\.\d*)\%", health_expenditures)
                     if percent is not None:
                         percent = percent.group(1)
                         percent = int(float(percent))
@@ -280,7 +278,7 @@ def parse_wfb():
 
                 if 'People and Society' in jsd and 'Literacy' in jsd['People and Society']:
                     literacy_male = jsd['People and Society']['Literacy']['male']['text']
-                    percent = re.match("(\d*|\d*.\d*)\%", literacy_male)
+                    percent = re.match("(\d*|\d*\.\d*)\%", literacy_male)
                     if percent is not None:
                         percent = percent.group(1)
                         percent = int(float(percent))
@@ -290,7 +288,7 @@ def parse_wfb():
                         print('No literacy male')
 
                     literacy_female = jsd['People and Society']['Literacy']['male']['text']
-                    percent = re.match("(\d*|\d*.\d*)\%", literacy_female)
+                    percent = re.match("(\d*|\d*\.\d*)\%", literacy_female)
                     if percent is not None:
                         percent = percent.group(1)
                         percent = int(float(percent))
@@ -303,7 +301,7 @@ def parse_wfb():
 
                 if 'Economy' in jsd and 'GDP - real growth rate' in jsd['Economy']:
                     gdp_growth = jsd['Economy']['GDP - real growth rate']['text']
-                    percent = re.match("(\d*|\d*.\d*)\%", gdp_growth)
+                    percent = re.match("(-?(\d*|\d*\.\d*))\%", gdp_growth)
                     if percent is not None:
                         percent = percent.group(1)
                         percent = int(float(percent))
@@ -351,7 +349,7 @@ def parse_wfb():
 
                 if 'Economy' in jsd and 'Unemployment rate' in jsd['Economy']:
                     unemployment = jsd['Economy']['Unemployment rate']['text']
-                    percent = re.match("(\d*|\d*.\d*)\%", unemployment)
+                    percent = re.match("(\d*|\d*\.\d*)\%", unemployment)
                     if percent is not None:
                         percent = percent.group(1)
                         percent = int(float(percent))
@@ -364,7 +362,7 @@ def parse_wfb():
 
                 if 'Economy' in jsd and 'Population below poverty line' in jsd['Economy']:
                     poverty_line = jsd['Economy']['Population below poverty line']['text']
-                    percent = re.match("(\d*|\d*.\d*)\%", poverty_line)
+                    percent = re.match("(\d*|\d*\.\d*)\%", poverty_line)
                     if percent is not None:
                         percent = percent.group(1)
                         percent = int(float(percent))
@@ -396,10 +394,6 @@ def parse_wfb():
                         print("No imports")
                 else:
                     print('No Economy/imports')
-
-
-
-
 
             ret[country_a2c] = data
 
