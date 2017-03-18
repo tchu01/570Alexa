@@ -2,6 +2,11 @@ import os
 import json
 import requests
 
+import sys
+reload(sys)  # Reload does the trick!
+sys.setdefaultencoding('UTF8')
+
+
 def answer_set():
     data = os.listdir('data')
     ret = set()
@@ -20,5 +25,17 @@ def answer_set():
 
 if __name__ == '__main__':
     alexa_set = answer_set()
-    print(alexa_set)
+    answerSet = set()
+
+    for x in alexa_set:
+        x = str(x)
+        x.replace("\"","")
+        if ';' in x:
+            for y in x.split(';'):
+                answerSet.add(str(y).strip().encode(encoding='ascii', errors='ignore'))
+        else:
+            answerSet.add(str(x).encode(encoding='ascii', errors='ignore'))
+
+    for x in answerSet:
+        print x
 

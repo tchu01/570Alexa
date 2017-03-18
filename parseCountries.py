@@ -4,11 +4,39 @@ import random
 import re
 import pickle
 import os
+import datetime
 
 
-def gen(howMany):
-    cl = get_countries()
-    nl = getNewsList()
+def save_rest_countries():
+    with open("rest_countries.p", "wb") as outfile:
+        rest_countries_list = getCountriesList()
+        pickle.dump(rest_countries_list, outfile)
+
+
+def get_rest_countries():
+    with open("rest_countries.p", "rb") as infile:
+        news_list = pickle.load(infile)
+        return news_list
+
+
+def save_news_headline():
+    with open("news_headlines.p", "wb") as outfile:
+        current_time = datetime.time()
+        news_list = getNewsList()
+        news_list = [current_time] + news_list
+        pickle.dump(news_list, outfile)
+
+
+def get_saved_news_headline():
+    with open("news_headlines.p", "rb") as infile:
+        news_list = pickle.load(infile)
+        ret = news_list[1:]
+        return news_list[1:]
+
+
+def gen(howMany, countryList):
+    #cl = getCountriesList() #Ill call these myself, and pass it in, so we don't have to make API calls every time
+    #nl = getNewsList()
     relevant = []
     for a in nl:
         # print(a)
@@ -29,6 +57,46 @@ def gen(howMany):
         question_answer_list.append(generate_qa(relevant))
 
     return question_answer_list
+
+
+def getNewsList():
+    newsList = []
+    sourceList = ['bbc-news', 'cnn', 'cnbc', 'google-news', 'the-huffington-post']
+    API_KEY = 'd017adabb56b40d1919976e8206486c2'
+
+    for src in sourceList:
+        url = 'https://newsapi.org/v1/articles?source=' + src + '&apiKey=' + API_KEY
+        response = requests.get(url)
+        jsonData = json.loads(response.content.decode("utf-8"))
+        for article in jsonData['articles']:
+            # print article['title']
+            # print "\t" + (article['description'] or '')
+            articleString = article['title'] + " - " + (article['description'] or '')
+            newsList.append(articleString)
+
+    return newsList
+
+
+def getCountriesList():
+    countryList = set()
+
+    # first pass
+    url = 'https://restcountries.eu/rest/v1/all'
+    response = requests.get(url)
+    jsonData = json.loads(response.content.decode("utf-8"))
+    for country in jsonData:
+        # print country['name']
+        countryList.add((country['name'], country['alpha2Code']))
+
+    # second pass
+    url = 'https://restcountries.eu/rest/v2/all'
+    response = requests.get(url)
+    jsonData = json.loads(response.content.decode("utf-8"))
+    for country in jsonData:
+        # print country['name']
+        countryList.add((country['name'], country['alpha2Code']))
+
+    return countryList
 
 
 def generate_qa(relevant):
@@ -148,90 +216,6 @@ def round_answer(choice, answer_list):
         pass
 
     return ret
-
-
-def get_news_headlines():
-    news_headline_file = "news_headlines.p"
-    if os.path.isfile(news_headline_file) == True:
-        pass
-    else:
-        pickle_headlines()
-
-    return unpickle_headlines()
-
-
-def pickle_headlines():
-    with open("news_headlines.p", "wb") as outfile:
-        news = getNewsList()
-        pickle.dump(news , outfile)
-
-
-def unpickle_headlines():
-    with open("news_headlines.p", "rb") as infile:
-        news = pickle.load(infile)
-        return news
-
-
-def getNewsList():
-    newsList = []
-    sourceList = ['bbc-news', 'cnn', 'cnbc', 'google-news', 'the-huffington-post']
-    API_KEY = 'd017adabb56b40d1919976e8206486c2'
-
-    for src in sourceList:
-        url = 'https://newsapi.org/v1/articles?source=' + src + '&apiKey=' + API_KEY
-        response = requests.get(url)
-        jsonData = json.loads(response.content.decode("utf-8"))
-        for article in jsonData['articles']:
-            # print article['title']
-            # print "\t" + (article['description'] or '')
-            articleString = article['title'] + " - " + (article['description'] or '')
-            newsList.append(articleString)
-
-    return newsList
-
-
-def get_countries():
-    country_file = "rest_countries.p"
-    if os.path.isfile(country_file) == True:
-        pass
-    else:
-        pickle_countries()
-
-    return unpickle_countries()
-
-
-def pickle_countries():
-    with open("rest_countries.p", "wb") as outfile:
-        countries = getCountriesList()
-        pickle.dump(countries, outfile)
-
-
-def unpickle_countries():
-    with open("rest_countries.p", "rb") as infile:
-        countries = pickle.load(infile)
-        return countries
-
-
-def getCountriesList():
-    countryList = set()
-
-    # first pass
-    url = 'https://restcountries.eu/rest/v1/all'
-    response = requests.get(url)
-    jsonData = json.loads(response.content.decode("utf-8"))
-    for country in jsonData:
-        # print country['name']
-        countryList.add((country['name'], country['alpha2Code']))
-
-    # second pass
-    url = 'https://restcountries.eu/rest/v2/all'
-    response = requests.get(url)
-    jsonData = json.loads(response.content.decode("utf-8"))
-    for country in jsonData:
-        # print country['name']
-        countryList.add((country['name'], country['alpha2Code']))
-
-    return countryList
 
 
 if __name__ == "__main__":
