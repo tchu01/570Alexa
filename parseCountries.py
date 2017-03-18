@@ -5,6 +5,8 @@ import re
 import pickle
 import os
 
+from game import TriviaQuestion
+
 
 def gen(howMany, countryList):
     # cl = getCountriesList() #Ill call these myself, and pass it in, so we don't have to make API calls every time
@@ -56,6 +58,7 @@ def generate_qa(relevant):
 
             complete_question = possible_questions[choice][0]
             complete_answer = possible_questions[choice][1]
+            complete_countries = [country]
 
             complete_question = complete_question.replace("#COUNTRY#", country)
             complete_answer = complete_answer.replace("#COUNTRY#", country)
@@ -73,6 +76,7 @@ def generate_qa(relevant):
 
                 print(country2)
                 print(country2_a2c)
+                complete_countries.append(country2)
 
                 country2_file = 'data/' + str(country2_a2c) + '.json'
                 with open(country2_file) as country2_json:
@@ -103,8 +107,9 @@ def generate_qa(relevant):
             print(complete_question)
             print(complete_answer)
             print(answer_choices)
+            print(complete_countries)
             print()
-            return complete_question, complete_answer, answer_choices
+            return TriviaQuestion(complete_question, complete_answer, answer_choices, complete_countries)
 
 
 def get_alexa_answers(choice, answer_list):
