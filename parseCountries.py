@@ -4,39 +4,14 @@ import random
 import re
 import pickle
 import os
-import datetime
-
-
-def save_rest_countries():
-    with open("rest_countries.p", "wb") as outfile:
-        rest_countries_list = getCountriesList()
-        pickle.dump(rest_countries_list, outfile)
-
-
-def get_rest_countries():
-    with open("rest_countries.p", "rb") as infile:
-        news_list = pickle.load(infile)
-        return news_list
-
-
-def save_news_headline():
-    with open("news_headlines.p", "wb") as outfile:
-        current_time = datetime.time()
-        news_list = getNewsList()
-        news_list = [current_time] + news_list
-        pickle.dump(news_list, outfile)
-
-
-def get_saved_news_headline():
-    with open("news_headlines.p", "rb") as infile:
-        news_list = pickle.load(infile)
-        ret = news_list[1:]
-        return news_list[1:]
 
 
 def gen(howMany, countryList):
-    #cl = getCountriesList() #Ill call these myself, and pass it in, so we don't have to make API calls every time
-    #nl = getNewsList()
+    # cl = getCountriesList() #Ill call these myself, and pass it in, so we don't have to make API calls every time
+    # nl = getNewsList()
+
+    cl = get_countries()
+    nl = getNewsList()
     relevant = []
     for a in nl:
         # print(a)
@@ -59,46 +34,6 @@ def gen(howMany, countryList):
     return question_answer_list
 
 
-def getNewsList():
-    newsList = []
-    sourceList = ['bbc-news', 'cnn', 'cnbc', 'google-news', 'the-huffington-post']
-    API_KEY = 'd017adabb56b40d1919976e8206486c2'
-
-    for src in sourceList:
-        url = 'https://newsapi.org/v1/articles?source=' + src + '&apiKey=' + API_KEY
-        response = requests.get(url)
-        jsonData = json.loads(response.content.decode("utf-8"))
-        for article in jsonData['articles']:
-            # print article['title']
-            # print "\t" + (article['description'] or '')
-            articleString = article['title'] + " - " + (article['description'] or '')
-            newsList.append(articleString)
-
-    return newsList
-
-
-def getCountriesList():
-    countryList = set()
-
-    # first pass
-    url = 'https://restcountries.eu/rest/v1/all'
-    response = requests.get(url)
-    jsonData = json.loads(response.content.decode("utf-8"))
-    for country in jsonData:
-        # print country['name']
-        countryList.add((country['name'], country['alpha2Code']))
-
-    # second pass
-    url = 'https://restcountries.eu/rest/v2/all'
-    response = requests.get(url)
-    jsonData = json.loads(response.content.decode("utf-8"))
-    for country in jsonData:
-        # print country['name']
-        countryList.add((country['name'], country['alpha2Code']))
-
-    return countryList
-
-
 def generate_qa(relevant):
     country, country_a2c = random.choice(relevant)
     print(country)
@@ -119,17 +54,17 @@ def generate_qa(relevant):
             choice = random.choice(keys)
             print(choice)
 
-            question = possible_questions[choice][0]
-            answer = possible_questions[choice][1]
+            complete_question = possible_questions[choice][0]
+            complete_answer = possible_questions[choice][1]
 
-            question = question.replace("#COUNTRY#", country)
-            answer = answer.replace("#COUNTRY#", country)
+            complete_question = complete_question.replace("#COUNTRY#", country)
+            complete_answer = complete_answer.replace("#COUNTRY#", country)
 
-            if '#COUNTRY2#' not in question:
-                singular_answer = country_answers[choice]
+            if '#COUNTRY2#' not in complete_question:
+                answer_choices = get_alexa_answers(choice, country_answers[choice])
                 fill = round_answer(choice, country_answers[choice])
 
-                answer = answer.replace('#ANSWER#', str(fill))
+                complete_answer = complete_answer.replace('#ANSWER#', str(fill))
             else:
                 country2 = country
                 country2_a2c = country_a2c
@@ -143,8 +78,8 @@ def generate_qa(relevant):
                 with open(country2_file) as country2_json:
                     country2_answers = json.load(country2_json)
 
-                    question = question.replace("#COUNTRY2#", country2)
-                    answer = answer.replace("#COUNTRY2#", country2)
+                    complete_question = complete_question.replace("#COUNTRY2#", country2)
+                    complete_answer = complete_answer.replace("#COUNTRY2#", country2)
 
                     if choice == 'larger_population':
                         choice = 'population'
@@ -158,27 +93,80 @@ def generate_qa(relevant):
 
                     if val > val2:
                         final = country
-                        singular_answer = [country]
+                        answer_choices = [country]
                     else:
                         final = country2
-                        singular_answer = [country2]
+                        answer_choices = [country2]
 
-                    answer = answer.replace("#ANSWER#", final)
+                    complete_answer = complete_answer.replace("#ANSWER#", final)
 
-            print(question)
-            print(answer)
-            print(singular_answer)
+            print(complete_question)
+            print(complete_answer)
+            print(answer_choices)
             print()
-            return question, answer, singular_answer
+            return complete_question, complete_answer, answer_choices
+
+
+def get_alexa_answers(choice, answer_list):
+    population = ['population']
+    kilometers_squared = ['area', 'land', 'water']
+    kilometers = ['coastline']
+    age = ['median_age_male', 'median_age_female', 'life_expectancy_male', 'life_expectancy_female']
+    percent = ['pop_growth_rate', 'health_expenditures', 'obesity', 'education_expenditures', 'literacy_male',
+               'literacy_female', 'unemployment', 'poverty_line']
+
+    ret = []
+
+    if choice in population:
+        val = answer_list[0]
+        val = round(val / 1000000) * 1000000
+
+        ret.append(val)
+        ret.append(float(val))
+    elif choice in kilometers_squared:
+        val = answer_list[0]
+        temp = re.match('(\d*) kilometers squared', val).group(1)
+        temp = round(int(float(temp)) / 1000) * 1000
+
+        ret.append(str(temp) + ' kilometers squared')
+        ret.append(str(float(temp)) + ' kilometers squared')
+    elif choice in kilometers:
+        val = answer_list[0]
+        temp = re.match('(\d*) kilometers', val).group(1)
+        temp = round(int(float(temp)) / 1000) * 1000
+
+        ret.append(str(temp) + ' kilometers')
+        ret.append(str(float(temp)) + ' kilometers')
+    elif choice in age:
+        val = answer_list[0]
+        temp = re.match('(\d*) years', val).group(1)
+        temp = round(int(float(temp)) / 10) * 10
+
+        ret.append(str(temp) + ' years')
+        ret.append(str(float(temp)) + ' years')
+    elif choice in percent:
+        val = answer_list[0]
+        temp = re.match('(\d*)%', val).group(1)
+        temp = round(int(float(temp)) / 10) * 10
+
+        ret.append(str(temp) + '%')
+        ret.append(str(float(temp)) + '%')
+    else:
+        return answer_list
+
+    return ret
+
 
 def round_answer(choice, answer_list):
     population = ['population']
     kilometers_squared = ['area', 'land', 'water']
     kilometers = ['coastline']
     age = ['median_age_male', 'median_age_female', 'life_expectancy_male', 'life_expectancy_female']
-    percent = ['pop_growth_rate', 'health_expenditures', 'obesity', 'education_expenditures', 'literacy_male', 'literacy_female', 'unemployment', 'poverty_line']
+    percent = ['pop_growth_rate', 'health_expenditures', 'obesity', 'education_expenditures', 'literacy_male',
+               'literacy_female', 'unemployment', 'poverty_line']
 
-    one_choice = ['borders', 'languages', 'natural_resources', 'ethnic_groups']
+    one_choice = ['borders', 'languages', 'natural_resources', 'ethnic_groups', 'agriculture', 'industries', 'exports',
+                  'imports']
 
     ret = answer_list[0]
 
@@ -218,5 +206,89 @@ def round_answer(choice, answer_list):
     return ret
 
 
+def get_news_headlines():
+    news_headline_file = "news_headlines.p"
+    if os.path.isfile(news_headline_file) == True:
+        pass
+    else:
+        pickle_headlines()
+
+    return unpickle_headlines()
+
+
+def pickle_headlines():
+    with open("news_headlines.p", "wb") as outfile:
+        news = getNewsList()
+        pickle.dump(news, outfile)
+
+
+def unpickle_headlines():
+    with open("news_headlines.p", "rb") as infile:
+        news = pickle.load(infile)
+        return news
+
+
+def getNewsList():
+    newsList = []
+    sourceList = ['bbc-news', 'cnn', 'cnbc', 'google-news', 'the-huffington-post']
+    API_KEY = 'd017adabb56b40d1919976e8206486c2'
+
+    for src in sourceList:
+        url = 'https://newsapi.org/v1/articles?source=' + src + '&apiKey=' + API_KEY
+        response = requests.get(url)
+        jsonData = json.loads(response.content.decode("utf-8"))
+        for article in jsonData['articles']:
+            # print article['title']
+            # print "\t" + (article['description'] or '')
+            articleString = article['title'] + " - " + (article['description'] or '')
+            newsList.append(articleString)
+
+    return newsList
+
+
+def get_countries():
+    country_file = "rest_countries.p"
+    if os.path.isfile(country_file) == True:
+        pass
+    else:
+        pickle_countries()
+
+    return unpickle_countries()
+
+
+def pickle_countries():
+    with open("rest_countries.p", "wb") as outfile:
+        countries = getCountriesList()
+        pickle.dump(countries, outfile)
+
+
+def unpickle_countries():
+    with open("rest_countries.p", "rb") as infile:
+        countries = pickle.load(infile)
+        return countries
+
+
+def getCountriesList():
+    countryList = set()
+
+    # first pass
+    url = 'https://restcountries.eu/rest/v1/all'
+    response = requests.get(url)
+    jsonData = json.loads(response.content.decode("utf-8"))
+    for country in jsonData:
+        # print country['name']
+        countryList.add((country['name'], country['alpha2Code']))
+
+    # second pass
+    url = 'https://restcountries.eu/rest/v2/all'
+    response = requests.get(url)
+    jsonData = json.loads(response.content.decode("utf-8"))
+    for country in jsonData:
+        # print country['name']
+        countryList.add((country['name'], country['alpha2Code']))
+
+    return countryList
+
+
 if __name__ == "__main__":
-    gen(5)
+    gen(5, [])

@@ -1,6 +1,5 @@
 import os
 import json
-import requests
 
 import sys
 reload(sys)  # Reload does the trick!
@@ -29,12 +28,8 @@ if __name__ == '__main__':
 
     for x in alexa_set:
         x = str(x)
-        x.replace("\"","")
-        if ';' in x:
-            for y in x.split(';'):
-                answerSet.add(str(y).strip().encode(encoding='ascii', errors='ignore'))
-        else:
-            answerSet.add(str(x).encode(encoding='ascii', errors='ignore'))
+        x = str(x.replace('\"',''))
+        answerSet.add(str(x).encode(encoding='ascii', errors='ignore'))
 
     for x in answerSet:
         print x

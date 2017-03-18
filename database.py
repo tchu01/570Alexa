@@ -156,7 +156,7 @@ def parse_wfb():
                 if 'Geography' in jsd and 'Natural resources' in jsd['Geography']:
                     if 'text' in jsd['Geography']['Natural resources']:
                         val = jsd['Geography']['Natural resources']['text']
-                        val = val.split(',')
+                        val = re.split('; |, ', val)
                         val = [x.strip(' ') for x in val]
                         data['natural_resources'] = val
                     else:
@@ -167,7 +167,7 @@ def parse_wfb():
                 if 'People and Society' in jsd and 'Ethnic groups' in jsd['People and Society']:
                     if 'text' in jsd['People and Society']['Ethnic groups']:
                         val = jsd['People and Society']['Ethnic groups']['text']
-                        val = val.split(',')
+                        val = re.split('; |, ', val)
                         val = [x.strip(' ').split(' ')[0] for x in val]
                         if 'other' in val:
                             val.remove('other')
@@ -328,7 +328,7 @@ def parse_wfb():
                 if 'Economy' in jsd and 'Agriculture - products' in jsd['Economy']:
                     if 'text' in jsd['Economy']['Agriculture - products']:
                         val = jsd['Economy']['Agriculture - products']['text']
-                        val = val.split(',')
+                        val = re.split('; |, ', val)
                         val = [x.strip(' ') for x in val]
                         data['agriculture'] = val
                     else:
@@ -339,7 +339,7 @@ def parse_wfb():
                 if 'Economy' in jsd and 'Industries' in jsd['Economy']:
                     if 'text' in jsd['Economy']['Industries']:
                         val = jsd['Economy']['Industries']['text']
-                        val = val.split(',')
+                        val = re.split('; |, ', val)
                         val = [x.strip(' ') for x in val]
                         data['industries'] = val
                     else:
@@ -376,7 +376,7 @@ def parse_wfb():
                 if 'Economy' in jsd and 'Exports - commodities' in jsd['Economy']:
                     if 'text' in jsd['Economy']['Exports - commodities']:
                         val = jsd['Economy']['Exports - commodities']['text']
-                        val = val.split(',')
+                        val = re.split('; |, ', val)
                         val = [x.strip(' ') for x in val]
                         data['exports'] = val
                     else:
@@ -387,7 +387,7 @@ def parse_wfb():
                 if 'Economy' in jsd and 'Imports - commodities' in jsd['Economy']:
                     if 'text' in jsd['Economy']['Imports - commodities']:
                         val = jsd['Economy']['Imports - commodities']['text']
-                        val = val.split(',')
+                        val = re.split('; |, ', val)
                         val = [x.strip(' ') for x in val]
                         data['imports'] = val
                     else:
